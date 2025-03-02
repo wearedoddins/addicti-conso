@@ -52,6 +52,42 @@ AddictiConso is a revolutionary platform designed to harness the power of advanc
 
 ## Technical Architecture
 
+```mermaid
+flowchart TD
+  subgraph "Edge Layer"
+    A[IoT Devices]
+    B[Edge AI TensorFlow Lite, PyTorch Mobile]
+  end
+
+  subgraph "Cloud Infrastructure"
+    C[Cloud-Native Platform<br/>AWS, GCP, Azure]
+    D[Microservices Architecture<br/>REST, gRPC]
+    E[Containerization & Orchestration<br/>Docker, Kubernetes]
+    F[Distributed Storage<br/>Cassandra, Big Data]
+    G[Real-Time Data Processing<br/>Spark, Flink]
+    H[AI & ML Models<br/>CNN, RNN, Transformers, GANs]
+  end
+
+  subgraph "Security & Compliance"
+    I[Data Encryption<br/>TLS, AES-256]
+    J[Access Controls & Monitoring]
+    K[Regulatory Compliance<br/>GDPR, CCPA]
+  end
+
+  %% Connections
+  A --> B
+  B --> C
+  C --> D
+  C --> E
+  C --> F
+  C --> G
+  G --> H
+  C --> I
+  I --> J
+  I --> K
+```
+
+
 ### AI and Machine Learning
 
 - **Deep Neural Networks:**  
